@@ -1,0 +1,12 @@
+.container {
+  flex-direction: column;
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+
+  input {
+    margin-bottom: 12px;
+  }
+}
