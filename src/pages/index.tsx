@@ -1,9 +1,14 @@
+import { GetServerSideProps } from "next";
 import { FormEvent, useState } from "react";
+import { useAuth } from "../contexts/AuthContext";
+import { withSSRGuest } from "../utils/withSSRGuest";
 import styles from "./home.module.scss";
 
 export default function Home() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const { signIn } = useAuth();
 
   function handleSubmit(event: FormEvent) {
     event.preventDefault();
@@ -13,7 +18,7 @@ export default function Home() {
       password,
     };
 
-    console.log(data);
+    signIn(data);
   }
 
   return (
@@ -34,3 +39,11 @@ export default function Home() {
     </form>
   );
 }
+
+export const getServerSideProps: GetServerSideProps = withSSRGuest(
+  async (ctx) => {
+    return {
+      props: {},
+    };
+  }
+);
