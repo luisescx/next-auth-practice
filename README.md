@@ -4,7 +4,7 @@ This is Next.js project created to practice user authentication and authorizatio
 
 <ul>
   <li>Clone the repository and install the dependencies using <strong>yarn</strong></li>
-  <li>Clone the API <a>https://github.com/rocketseat-education/ignite-reactjs-auth-backend</a> and install the dependencies with <strong>yarn</strong> and run the project with <strong>yarn dev</strong></li>
+  <li>Clone the <a href="https://github.com/rocketseat-education/ignite-reactjs-auth-backend" target="_blank">API </a> and install the dependencies with <strong>yarn</strong> and run the project with <strong>yarn dev</strong></li>
 
   <li>Run the project with <strong>yarn dev</strong</li>
 </ul>
